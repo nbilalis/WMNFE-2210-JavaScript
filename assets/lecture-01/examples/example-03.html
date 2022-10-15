@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example 03</title>
+  </head>
+  <body>
+    <script>
+      // @ts-check
+      'use strict';
+
+      let a = prompt('Give me a number:');
+      let b = prompt('Give me another number:');
+      let c = prompt('Last one, I promise:');
+
+      // Diifferent ways to convert a string to a number
+      let sum = (+a) + (b * 1) + parseInt(c);
+
+      alert(sum);
+    </script>
+  </body>
+</html>
