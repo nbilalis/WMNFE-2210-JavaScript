@@ -2,7 +2,7 @@ $accent-color: #743bbc;
 
 .remark-slide {
   color: white;
-  font-family: "Century Gothic";
+  font-family: "Century Gothic", Arial, Helvetica, sans-serif;
 
   .remark-slide-content {
     font-size: 24px;
@@ -93,14 +93,6 @@ $accent-color: #743bbc;
   img {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  h3 + p img {
-    height: 25vw;
-  }
-
-  h4 + p img {
-    height: 20vw;
   }
 
   $topbar-height: 100px;
@@ -327,7 +319,7 @@ $accent-color: #743bbc;
     }
 
     > h3 {
-      font-size: 1.7em; // around 48px
+      font-size: 1.6em; // around 48px
       color: $accent-color;
       position: absolute;
       top: calc(#{$topbar-height} + #{$padding-top});
@@ -355,7 +347,7 @@ $accent-color: #743bbc;
       img {
         display: block;
         max-width: 90%;
-        margin: 2rem auto;
+        margin: 0 auto;
       }
     }
 
@@ -383,6 +375,7 @@ $accent-color: #743bbc;
         margin-top: 0;
         margin-bottom: 1em;
         font-size: 0.8em;
+        white-space: nowrap;
         overflow-x: hidden;
         text-overflow: ellipsis;
       }
@@ -501,6 +494,18 @@ $accent-color: #743bbc;
 
   .extra-long-code .remark-code {
     font-size: 0.6em;
+  }
+
+  .six-elevenths-picture {
+    img {
+      max-height: 19rem;
+    }
+  }
+
+  .extra-big-picture {
+    img {
+      max-height: 20em;
+    }
   }
 
   .hide-table-head {

@@ -1,6 +1,6 @@
 .remark-slide {
   color: white;
-  font-family: "Century Gothic";
+  font-family: "Century Gothic", Arial, Helvetica, sans-serif;
 }
 .remark-slide .remark-slide-content {
   font-size: 24px;
@@ -73,12 +73,6 @@
 .remark-slide img {
   margin-left: auto;
   margin-right: auto;
-}
-.remark-slide h3 + p img {
-  height: 25vw;
-}
-.remark-slide h4 + p img {
-  height: 20vw;
 }
 .remark-slide .common {
   background: linear-gradient(to bottom, #262626 100px, #0d0d0d 100px, #0d0d0d 100%);
@@ -248,7 +242,7 @@
   margin-left: calc(25% + 2rem);
 }
 .remark-slide .chapter > h3 {
-  font-size: 1.7em;
+  font-size: 1.6em;
   color: #743bbc;
   position: absolute;
   top: calc(100px + 3.5rem);
@@ -271,7 +265,7 @@
 .remark-slide .chapter > p img {
   display: block;
   max-width: 90%;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 .remark-slide .chapter blockquote {
   font-style: italic;
@@ -293,6 +287,7 @@
   margin-top: 0;
   margin-bottom: 1em;
   font-size: 0.8em;
+  white-space: nowrap;
   overflow-x: hidden;
   text-overflow: ellipsis;
 }
@@ -370,6 +365,12 @@
 }
 .remark-slide .extra-long-code .remark-code {
   font-size: 0.6em;
+}
+.remark-slide .six-elevenths-picture img {
+  max-height: 19rem;
+}
+.remark-slide .extra-big-picture img {
+  max-height: 20em;
 }
 .remark-slide .hide-table-head thead {
   display: none;
