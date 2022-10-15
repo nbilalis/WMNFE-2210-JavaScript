@@ -1,0 +1,11 @@
+{
+  "name": "wmnfe-2210-javascript",
+  "version": "3.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/nbilalis/WMNFE-2210-JavaScript.git",
+  "author": "Nicholaos Bilalis <n.bilalis@sae.edu>",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.1"
+  }
+}
