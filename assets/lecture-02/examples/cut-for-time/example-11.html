@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #11</title>
+  </head>
+  <body>
+    <script>
+      // @ts-check
+      'use strict';
+
+      const input = prompt('Enter age:');
+      const age = parseInt(input);
+
+      /* let label;
+
+      if (age >= 18) {
+          label = 'Adult';
+      } else {
+          label = 'Underage';
+      } */
+
+      const label = age >= 18 ? 'Adult' : 'Underage';
+
+      console.log(label);
+    </script>
+  </body>
+</html>

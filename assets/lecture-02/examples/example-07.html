@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #07</title>
+  </head>
+  <body>
+    <script>
+      // @ts-check
+      'use strict';
+
+      const input = prompt('Enter grade:');
+      const grade = parseInt(input);
+
+      if (grade < 10) {
+        alert('Sorry…');          // [1, 10)
+      } else if (grade <= 15) {
+        alert('Fair enough');     // [10, 15]
+      } else if (grade <= 20) {
+        alert('Well done!');      // (15, 20]
+      }
+    </script>
+  </body>
+</html>
