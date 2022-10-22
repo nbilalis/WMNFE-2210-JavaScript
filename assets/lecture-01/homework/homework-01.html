@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework #01</title>
+  </head>
+  <body>
+    <script>
+      // @ts-check
+      'use strict';
+
+      const input = prompt('Please enter the circle radius:');
+      const r = parseFloat(input);
+
+      const circ = 2 * Math.PI * r;
+      const area = Math.PI * Math.pow(r, 2); // or just r ** 2, r * r
+
+      /*
+      alert('The circumference of the circle is:' + circ);
+      alert('The area of the circle is:' + area);
+      */
+
+      alert(`The circumference is ${circ} and the area is ${area}.`);
+    </script>
+  </body>
+</html>
