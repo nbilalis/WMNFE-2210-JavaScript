@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #02</title>
+  </head>
+  <body>
+    <script>
+      // @ts-check
+      'use strict';
+
+      let i;
+
+      // 1
+      i = 0;
+      while (i < 5) {
+        console.log(i);
+        i = i + 1; // i++; i += 1;
+      }
+
+      // 2
+      i = 0;
+      while (i < 5) {
+        i = i + 1; // i++; i += 1;
+        console.log(i);
+      }
+
+      // 3 (same as 1)
+      i = 0;
+      while (i < 5) {
+        console.log(i++);
+      }
+
+      // 4 (same as 2)
+      i = 0;
+      while (i < 5) {
+        console.log(++i);
+      }
+    </script>
+  </body>
+</html>

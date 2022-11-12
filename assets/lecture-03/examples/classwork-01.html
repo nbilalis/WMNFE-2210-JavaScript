@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classwork #1</title>
+  </head>
+  <body>
+    <script>
+      // @ts-check
+      'use strict';
+
+      let lower = 1, upper = 100;
+
+      alert(`Think a number between ${lower} and ${upper}, but keep it a secret!`);
+
+      while (true) {
+        let middle = Math.floor((lower + upper) / 2); // Average (integer) of a & b
+
+        let answer = Number(prompt(`Is it ${middle}? Enter '1' if yes, or '0' otherwise`));
+
+        if (answer === 1) {
+          alert(`I knew it! It's ${middle}!`);
+          break;
+        }
+
+        let larger = Number(prompt(`Is it larger than ${middle}? Press '1' if yes, or '0' otherwise`));
+
+        if (larger === 1) {
+          lower = middle + 1;
+        } else {
+          upper = middle - 1;
+        }
+      }
+    </script>
+  </body>
+</html>

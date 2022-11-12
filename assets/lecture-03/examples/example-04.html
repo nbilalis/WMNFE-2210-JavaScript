@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #04</title>
+  </head>
+  <body>
+    <script>
+      // @ts-check
+      'use strict';
+
+      let grade;
+
+      do {
+        grade = Number(prompt('Enter your grade:'));
+      } while (isNaN(grade) || grade < 1 || grade > 20);
+
+      alert(`Your grade is: ${grade}`);
+    </script>
+  </body>
+</html>
