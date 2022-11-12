@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compaible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework #02</title>
+  </head>
+  <body>
+    <script>
+      // @ts-check
+      'use strict';
+
+      const Alpha = 1.39;
+      const Fix = 1.1;
+      const Septem = 2.3;
+      const Zeos = 1.6;
+
+      const brand = prompt("What's your favorite brand?");
+      const cans = Number(prompt('How many cans do you want?'));
+
+      let message;
+      let cost = 0;
+
+      switch (brand.toLowerCase().trim()) {
+        case 'alpha':
+          cost = Alpha * cans;
+          break;
+        case 'fix':
+          cost = Fix * cans;
+          break;
+        case 'septem':
+          cost = Septem * cans;
+          break;
+        case 'zeos':
+          cost = Zeos * cans;
+          break;
+        default:
+          message = 'Sorry, we do not have this brand';
+      }
+
+      if (cost !== 0) {
+        message = `${cans} cans of ${brand} cost: €${cost.toFixed(2)}`;
+      }
+
+      alert(message);
+    </script>
+  </body>
+</html>

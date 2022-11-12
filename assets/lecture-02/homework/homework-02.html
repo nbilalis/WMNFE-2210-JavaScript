@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compaible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework #02</title>
+  </head>
+  <body>
+    <script>
+      // @ts-check
+      'use strict';
+
+      const Alpha = 1.39;
+      const Fix = 1.1;
+      const Septem = 2.3;
+      const Zeos = 1.6;
+
+      const brand = prompt("What's your favorite brand?").toLowerCase().trim();
+      const cans = Number(prompt('How many cans do you want?'));
+
+      let message;
+      let cost = 0;
+
+      if (isNaN(cans)) {
+        message = "Sorry, I don't know how many cans you want.";
+      } else if (brand === 'alpha') {
+        cost = cans * Alpha;
+      } else if (brand === 'fix') {
+        cost = cans * Fix;
+      } else if (brand === 'septem') {
+        cost = cans * Septem;
+      } else if (brand === 'zeos') {
+        cost = cans * Zeos;
+      } else {
+        message = "Sorry, we don't have that brand.";
+      }
+
+      if (cost !== 0) {
+        message = `${cans} cans of ${brand} cost: €${cost.toFixed(2)}`;
+      }
+
+      alert(message);
+    </script>
+  </body>
+</html>
