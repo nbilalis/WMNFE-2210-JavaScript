@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework #1</title>
+  </head>
+  <body>
+    <script>
+      // @ts-check
+      'use strict';
+
+      let upper = 1,
+        lower = 100,
+        tries = 0;
+      const max_tries = 7; // Math.floor(Math.log2(b - a + 1)) + 1
+
+      alert(`Think a number between ${upper} and ${lower}, but keep it a secret!`);
+
+      while (true) {
+        tries += 1;
+
+        let guess = Math.floor((upper + lower) / 2); // Average (integer) of a & b
+
+        let answer = prompt(`Guess #${tries}: Is it ${guess}? Enter 'y' if yes, or 'n' otherwise`);
+
+        if (answer.toLowerCase() === 'y') {
+          alert(`I found the number you were thinking about (${guess}) in ${tries} tr${tries === 1 ? 'y' : 'ies'}!`);
+          break;
+        } else if (tries === max_tries) {
+          alert('There is something fishy about your answers…');
+          break;
+        }
+
+        let larger = prompt(`Is it larger than ${guess}? Press 'y' if yes, or 'n' otherwise`);
+
+        if (larger.toLowerCase() === 'y') {
+          upper = guess + 1;
+        } else {
+          lower = guess - 1;
+        }
+      }
+    </script>
+  </body>
+</html>
