@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #10</title>
+  </head>
+  <body>
+    <script>
+      // @ts-check
+      'use strict';
+
+      const things = ['chair', 'watch', 'spoon', 'book'];
+
+      things.unshift('clock');  // Shift items to the right
+      console.log(things);      // ['clock', 'chair', 'watch', 'spoon', 'book']
+
+      things.shift();           // Shift items to the left
+      console.log(things);      // ['chair', 'watch', 'spoon', 'book']
+
+      let removed = things.shift();
+      console.log(removed);     // 'chair'
+      console.log(things);      // ['watch', 'spoon', 'book']
+    </script>
+  </body>
+</html>

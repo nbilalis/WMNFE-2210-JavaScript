@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classwork #1</title>
+  </head>
+  <body>
+    <script>
+      // @ts-check
+      'use strict';
+
+      const names = [
+        'Anagnostou, Aikaterini',
+        'Bakas, Evangelos',
+        'Galiatsatou - Saridou, Danai',
+        'Karavokyris, Aristeidis',
+        'Kostis, Evangelos',
+        'Mastrokalos, Ioannis - Dimosthenis',
+        'Mikes, Efthymios - Panagiotis',
+        'Nikiforos, Nikolaos',
+        'Panagiotou, Petros',
+        'Papagiannoula, Paraskevi',
+        'Papamichail, Epameinondas - Ioannis',
+        'Perdikogiannis, Eleftherios',
+        'Tzakopoulos, Panagiotis',
+        'Vaskali, Eleni', // Trailing, dangling comma
+      ];
+
+      // Make an unordered list with the contents of an array
+
+      document.write('<ul>');
+
+      for (let i = 0; i < names.length; i++) {
+        document.write(`<li>${names[i]}</li>`);
+      }
+
+      document.write('</ul>');
+    </script>
+  </body>
+</html>

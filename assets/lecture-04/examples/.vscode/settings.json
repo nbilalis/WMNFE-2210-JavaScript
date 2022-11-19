@@ -1,0 +1,9 @@
+{
+  "[html][javascript][jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  "editor.fontLigatures": false,
+  "vscode-edge-devtools.webhint": false
+}

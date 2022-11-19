@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #3</title>
+  </head>
+  <body>
+    <script>
+      // @ts-check
+      'use strict';
+
+      const things = ['chair', 'watch', 'spoon', 'book'];
+
+      // How to change an element
+
+      // things = []; // This is not allowed, because `things` is a constant
+
+      // But, we can still change the contents of the array
+
+      // Replace an element
+      things[0] = 'couch';
+      console.log(things); // ['table', 'watch', 'spoon', 'book']
+
+      // Add an element
+      things[4] = 'photo';
+      console.log(things); // ['table', 'watch', 'spoon', 'book', 'pen']
+    </script>
+  </body>
+</html>

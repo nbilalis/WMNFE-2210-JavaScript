@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #8</title>
+  </head>
+  <body>
+    <script>
+      // @ts-check
+      'use strict';
+
+      const things = ['chair', 'watch', 'spoon', 'book'];
+
+      // Use .push(item1[, item2, ...]) to add items to the end of the array
+
+      things.push('fork');
+      things.push('bed', 'tv');
+
+      console.log(things); // ["chair", "watch", "spoon", "book", "fork", "bed", "tv"]
+
+      const new_things = ['couch', 'radio'];
+
+      // This wont add two new itens to the array...
+      // things.push(new_things); // things.push(['couch', 'radio']);
+      // console.log(things); // Hmm...
+
+      for (let i = 0; i < new_things.length; i++) {
+        things.push(new_things[i]);
+      }
+
+      /* for (const item of new_things) {
+        things.push(item);
+      } */
+
+      // things.push(...new_things); // Spread operator
+
+      /* new_things.forEach((item) => {
+        things.push(item);
+      }); */
+      console.log(things);
+    </script>
+  </body>
+</html>
