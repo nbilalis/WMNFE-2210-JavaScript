@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #06</title>
+  </head>
+  <body>
+    <script>
+      // @ts-check
+      'use strict';
+
+      function fahrenheitToCelsius(degrees) {
+        return (5 / 9) * (degrees - 32);
+      }
+
+      function promptNumeric(text = 'Please enter a numeric value:') {
+        const input = prompt(text);
+        return Number(input);
+      }
+
+      const fahrenheit = promptNumeric('Please enter degrees fahrenheit:');
+      const celsius = fahrenheitToCelsius(fahrenheit);
+
+      alert(`${fahrenheit} degrees fahrenheit are equal to ${celsius.toFixed(2)} degrees celsius.`);
+    </script>
+  </body>
+</html>

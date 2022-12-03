@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #10</title>
+  </head>
+  <body>
+    <script>
+      // @ts-check
+      'use strict';
+
+      // n! = n * (n - 1) * (n - 2) * ... * 1
+      function factorial(n) {
+        let p = 1;
+
+        for (let i = 1; i <= n; i++) {
+          p *= i;
+        }
+
+        return p;
+      }
+
+      // Recursive function
+      // n! = n * (n - 1)!
+      function factorialRecursive(n) {
+        if (n === 1) return 1;
+        else return n * factorialRecursive(n - 1);
+      }
+
+      console.log(factorial(5));
+      console.log(factorialRecursive(6));
+    </script>
+  </body>
+</html>
