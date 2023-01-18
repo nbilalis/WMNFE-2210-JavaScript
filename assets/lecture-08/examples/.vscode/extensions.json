@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "aleg94.share-snippet",
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "github.copilot",
+    "mhutchie.git-graph",
+    "ritwickdey.liveserver"
+  ]
+}
