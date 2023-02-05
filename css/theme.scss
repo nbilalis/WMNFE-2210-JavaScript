@@ -462,6 +462,11 @@ $horizontal-margin: 30px;
     font-size: 0.8em;
   }
 
+  .remark-code-line {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+  }
+
   // Custom slide classes
 
   .long-text {

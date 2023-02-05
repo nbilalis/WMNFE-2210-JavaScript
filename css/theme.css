@@ -342,6 +342,10 @@
 .remark-slide .remark-code {
   font-size: 0.8em;
 }
+.remark-slide .remark-code-line {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
 .remark-slide .long-text h4 {
   margin-bottom: 0.5em;
 }
