@@ -1,0 +1,16 @@
+[
+  { "brand": "Toyota", "model": "Corolla", "year": 2019 },
+  { "brand": "Honda", "model": "Civic", "year": 2018 },
+  { "brand": "Ford", "model": "Fiesta", "year": 2017 },
+  { "brand": "Mazda", "model": "3", "year": 2016 },
+  { "brand": "Tesla", "model": "Model X", "year": 2015 },
+  { "brand": "Nissan", "model": "Leaf", "year": 2014 },
+  { "brand": "BMW", "model": "i3", "year": 2013 },
+  { "brand": "Volkswagen", "model": "e-Golf", "year": 2012 },
+  { "brand": "Chevrolet", "model": "Volt", "year": 2011 },
+  { "brand": "Toyota", "model": "Prius", "year": 2010 },
+  { "brand": "Ford", "model": "Focus", "year": 2009 },
+  { "brand": "Nissan", "model": "Leaf", "year": 2008 },
+  { "brand": "Toyota", "model": "Prius", "year": 2007 },
+  { "brand": "Honda", "model": "Insight", "year": 2006 }
+]
